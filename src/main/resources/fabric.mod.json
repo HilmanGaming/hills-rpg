@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "hills-rpg",
+	"version": "${version}",
+	"name": "Hill's RPG",
+	"description": "introduces RPG mechanics, powerful abilities, unique equipment, challenging enemies, and a progression system designed to make every adventure feel meaningful.",
+	"authors": [
+		"Hilman!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/hills-rpg/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.hilman.hilmanrpg.HillSRPG"
+		],
+		"fabric-datagen": [
+			"net.hilman.hilmanrpg.HillSRPGDataGenerator"
+		],
+		"client" : [
+			"net.hilman.hilmanrpg.HillSRPGClient"
+		]
+	},
+	"mixins": [
+		"hills-rpg.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
