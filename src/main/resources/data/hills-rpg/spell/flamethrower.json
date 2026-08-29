@@ -1,0 +1,60 @@
+{
+  "school": "spell_power:fire",
+  "type": "ACTIVE",
+  "range": 12,
+  "tier": 1,
+  "active": {
+    "cast": {
+      "duration": 10.0,
+      "type": "CHANNEL",
+      "channel": {
+        "ticks": 12,
+        "release_fx": true
+      },
+      "animation": { "id": "spell_engine:two_handed_channeling" },
+      "sound": { "id": "spell_engine:generic_fire_casting" },
+      "particles": [
+        {
+          "id": "spell_engine:flame",
+          "batch": {
+            "shape": "CONE",
+            "anchor": "LAUNCH_POINT",
+            "alignment": "LOOK",
+            "angle": 12,
+            "count": 6,
+            "min_speed": 0.3,
+            "max_speed": 0.6
+          }
+        }
+      ]
+    }
+  },
+  "target": {
+    "type": "BEAM",
+    "beam": {
+      "color_rgba": 4294914816,
+      "inner_color_rgba": 4294967040,
+      "width": 0.35,
+      "luminance": "HIGH",
+      "flow": 2.0
+    }
+  },
+  "deliver": { "type": "DIRECT" },
+  "impacts": [
+    {
+      "action": {
+        "type": "DAMAGE",
+        "damage": { "spell_power_coefficient": 0.15 }
+      }
+    },
+    {
+      "action": {
+        "type": "FIRE",
+        "fire": { "duration": 2.0 }
+      }
+    }
+  ],
+  "cost": {
+    "cooldown": { "duration": 0.5 }
+  }
+}

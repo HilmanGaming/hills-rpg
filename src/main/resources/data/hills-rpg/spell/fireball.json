@@ -1,0 +1,44 @@
+{
+  "school": "spell_power:fire",
+  "type": "ACTIVE",
+  "range": 30,
+  "tier": 1,
+  "active": {
+    "cast": {
+      "duration": 0.6,
+      "type": "STANDARD",
+      "animation": { "id": "spell_engine:one_handed_projectile_charge" }
+    }
+  },
+  "release": {
+    "animation": { "id": "spell_engine:one_handed_projectile_release" },
+    "sound": { "id": "spell_engine:generic_cast_1" }
+  },
+  "target": {
+    "type": "AIM",
+    "aim": {
+      "required": false,
+      "sticky": true,
+      "use_caster_as_fallback": false,
+      "reposition_vertically": 0.0
+    }
+  },
+  "deliver": {
+    "type": "PROJECTILE",
+    "projectile": {
+      "projectile": {
+        "client_data": {
+          "light_level": 10,
+          "travel_particles": [
+            { "id": "minecraft:flame" }
+          ]
+        }
+      }
+    }
+  },
+  "impacts": [
+    { "action": { "type": "DAMAGE", "damage": { "spell_power_coefficient": 1.0 } } },
+    { "action": { "type": "FIRE", "fire": { "duration": 3.0 } } }
+  ],
+  "cost": { "cooldown": { "duration": 4.0 } }
+}

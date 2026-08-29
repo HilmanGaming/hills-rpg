@@ -2,7 +2,11 @@ package net.hilman.hilmanrpg;
 
 import net.fabricmc.api.ModInitializer;
 
-import net.minecraft.util.Identifier;
+import net.hilman.hilmanrpg.block.ModBlocks;
+import net.hilman.hilmanrpg.item.ModItemGroups;
+import net.hilman.hilmanrpg.item.ModItemGroups;
+import net.hilman.hilmanrpg.item.ModItems;
+
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,14 +21,10 @@ public class HillSRPG implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
+		ModItemGroups.registerItemGroups();
 
-		LOGGER.info("Bisa anjay bangke woooooooooooooooo!!!!");
-	}
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 
-	public static Identifier id(String path) {
-		return Identifier.of(MOD_ID, path);
 	}
 }

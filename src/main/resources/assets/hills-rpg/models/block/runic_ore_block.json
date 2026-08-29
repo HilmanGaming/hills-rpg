@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "hills-rpg:block/runic_ore_block"
+  }
+}

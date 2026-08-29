@@ -1,0 +1,14 @@
+{
+  //ModGroups
+  "itemgroup.hills-rpg.hills_rpg_items": "Hill's RPG Items",
+
+  //ModItems
+  "item.hills-rpg.scorching_staff": "Scorching Staff",
+  "item.hills-rpg.runic_shard" : "Runic Shard",
+
+  //ModBlocks
+  "block.hills-rpg.runic_ore_block": "Runic Ore Block"
+
+  //ModSpells
+
+}
