@@ -4,7 +4,6 @@ import net.fabricmc.api.ModInitializer;
 
 import net.hilman.hilmanrpg.block.ModBlocks;
 import net.hilman.hilmanrpg.item.ModItemGroups;
-import net.hilman.hilmanrpg.item.ModItemGroups;
 import net.hilman.hilmanrpg.item.ModItems;
 
 
