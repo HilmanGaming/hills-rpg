@@ -2,6 +2,7 @@ package net.hilman.hilmanrpg;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.hilman.hilmanrpg.item.ModItems;
 import net.minecraft.util.Identifier;
 
 import org.slf4j.Logger;
@@ -17,10 +18,7 @@ public class HillSRPG implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
-
+		ModItems.init();
 		LOGGER.info("Bisa anjay bangke woooooooooooooooo!!!!");
 	}
 

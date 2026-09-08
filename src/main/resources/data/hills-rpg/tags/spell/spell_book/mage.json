@@ -1,0 +1,4 @@
+{
+  "_comment": "Spells learnable by the Mage class via a spell book.",
+  "values": ["hills-rpg:fireball"]
+}

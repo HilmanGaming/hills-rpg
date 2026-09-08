@@ -9,6 +9,19 @@ repositories {
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
+
+	// Spell Engine and its required dependencies are published through Modrinth's Maven.
+	exclusiveContent {
+		forRepository {
+			maven {
+				name = 'Modrinth'
+				url = 'https://api.modrinth.com/maven'
+			}
+		}
+		filter {
+			includeGroup 'maven.modrinth'
+		}
+	}
 }
 
 fabricApi {
@@ -25,6 +38,15 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+
+	// Spell Engine: data-driven spell/RPG mechanics library that this mod is built on top of.
+	modImplementation "maven.modrinth:spell-engine:${project.spell_engine_version}"
+
+	// Required by Spell Engine.
+	modImplementation "maven.modrinth:spell-power:${project.spell_power_version}"
+	modImplementation "maven.modrinth:playeranimator:${project.player_animator_version}"
+	modImplementation "maven.modrinth:cloth-config:${project.cloth_config_version}"
+	modImplementation "maven.modrinth:trinkets:${project.trinkets_version}"
 }
 
 processResources {
@@ -41,11 +63,7 @@ tasks.withType(JavaCompile).configureEach {
 }
 
 java {
-	// Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
-	// if it is present.
-	// If you remove this line, sources will not be generated.
 	withSourcesJar()
-
 	sourceCompatibility = JavaVersion.VERSION_21
 	targetCompatibility = JavaVersion.VERSION_21
 }
@@ -59,19 +77,12 @@ jar {
 	}
 }
 
-// configure the maven publication
 publishing {
 	publications {
 		create("mavenJava", MavenPublication) {
 			from components.java
 		}
 	}
-
-	// See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
 	repositories {
-		// Add repositories to publish to here.
-		// Notice: This block does NOT have the same function as the block in the top level.
-		// The repositories here will be used for publishing your artifact, not for
-		// retrieving dependencies.
 	}
 }
