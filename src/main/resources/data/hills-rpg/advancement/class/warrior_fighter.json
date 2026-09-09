@@ -1,0 +1,14 @@
+{
+  "parent": "hills-rpg:class/warrior",
+  "display": {
+    "icon": { "id": "minecraft:book" },
+    "title": { "translate": "advancement.hills-rpg.class.warrior_fighter.title" },
+    "description": { "translate": "advancement.hills-rpg.class.warrior_fighter.description" },
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "never": { "trigger": "minecraft:impossible" }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "display": {
+    "icon": { "id": "minecraft:book" },
+    "title": { "translate": "advancement.hills-rpg.class.root.title" },
+    "description": { "translate": "advancement.hills-rpg.class.root.description" },
+    "background": "minecraft:textures/block/gray_concrete.png",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "never": { "trigger": "minecraft:impossible" }
+  }
+}

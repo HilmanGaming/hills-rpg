@@ -1,6 +1,6 @@
 {
-  "item.hills-rpg.spell_book/wizard": "Wizard's Grimoire",
-  "item.hills-rpg.spell_book/wizard.description": "Contains the spells known to the Wizard class.",
+  "item.hills-rpg.spell_book/mage": "Wizard's Grimoire",
+  "item.hills-rpg.spell_book/mage.description": "Contains the spells known to the Wizard class.",
   "item.hills-rpg.mage_tome": "Tome of the Wizard",
   "item.hills-rpg.mage_tome.tooltip": "Right-click to become a Wizard and receive your starting wand.",
   "item.hills-rpg.mage_wand": "Wizard's Wand",

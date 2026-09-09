@@ -18,7 +18,8 @@ public class HillSRPG implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModItems.init();
+		ModItems.register();
+
 		LOGGER.info("Bisa anjay bangke woooooooooooooooo!!!!");
 	}
 

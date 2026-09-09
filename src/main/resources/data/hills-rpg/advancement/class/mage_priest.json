@@ -1,0 +1,14 @@
+{
+  "parent": "hills-rpg:class/mage",
+  "display": {
+    "icon": { "id": "minecraft:book" },
+    "title": { "translate": "advancement.hills-rpg.class.mage_priest.title" },
+    "description": { "translate": "advancement.hills-rpg.class.mage_priest.description" },
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "never": { "trigger": "minecraft:impossible" }
+  }
+}

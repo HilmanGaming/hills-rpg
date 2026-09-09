@@ -1,0 +1,14 @@
+{
+  "parent": "hills-rpg:class/rogue",
+  "display": {
+    "icon": { "id": "minecraft:book" },
+    "title": { "translate": "advancement.hills-rpg.class.rogue_assassin.title" },
+    "description": { "translate": "advancement.hills-rpg.class.rogue_assassin.description" },
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "never": { "trigger": "minecraft:impossible" }
+  }
+}
