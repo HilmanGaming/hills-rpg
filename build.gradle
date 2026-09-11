@@ -47,6 +47,10 @@ dependencies {
 	modImplementation "maven.modrinth:playeranimator:${project.player_animator_version}"
 	modImplementation "maven.modrinth:cloth-config:${project.cloth_config_version}"
 	modImplementation "maven.modrinth:trinkets:${project.trinkets_version}"
+
+	modImplementation "maven.modrinth:skills:${project.puffish_skills_version}"
+	modImplementation "maven.modrinth:rpg-class-selection:${project.rpg_class_selection_version}"
+	modImplementation "maven.modrinth:rpg-inventory:${project.rpg_inventory_version}"
 }
 
 processResources {

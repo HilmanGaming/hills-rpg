@@ -1,0 +1,20 @@
+{
+  "class_identifier": "hills-rpg:warrior_tank",
+  "unlock_predicate": [
+    { "condition": "minecraft:entity_properties", "entity": "this",
+      "predicate": { "type_specific": { "type": "minecraft:player",
+        "advancements": { "hills-rpg:class/warrior_tank": true } } } }
+  ],
+  "visible_when_locked": false,
+  "description": "class_selection_screen.hills-rpg.warrior_tank.description",
+  "locked_description": "class_selection_screen.hills-rpg.warrior_tank.locked_description",
+  "upgrade_entry_group_list": [
+    { "upgrade_entry_list": [
+      { "upgrade_identifier": "hills-rpg:tank_taunt",
+        "title": "spell.hills-rpg.tank_taunt.name",
+        "component_list": [
+          { "type": "attribute_modifier", "attribute_identifier": "minecraft:generic.max_health",
+            "attribute_modifier_amount": 4.0, "attribute_modifier_operation": "ADD_VALUE" }
+        ] } ] }
+  ]
+}

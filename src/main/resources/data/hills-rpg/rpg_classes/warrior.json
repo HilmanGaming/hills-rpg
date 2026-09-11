@@ -1,0 +1,19 @@
+{
+  "class_identifier": "hills-rpg:warrior",
+  "unlock_predicate": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type_specific": {
+          "type": "minecraft:player",
+          "advancements": { "hills-rpg:class/warrior": true }
+        }
+      }
+    }
+  ],
+  "visible_when_locked": true,
+  "description": "class_selection_screen.hills-rpg.warrior.description",
+  "locked_description": "class_selection_screen.hills-rpg.warrior.locked_description",
+  "upgrade_entry_group_list": []
+}

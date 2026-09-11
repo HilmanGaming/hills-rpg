@@ -1,0 +1,20 @@
+{
+  "class_identifier": "hills-rpg:mage_wizard",
+  "unlock_predicate": [
+    { "condition": "minecraft:entity_properties", "entity": "this",
+      "predicate": { "type_specific": { "type": "minecraft:player",
+        "advancements": { "hills-rpg:class/mage_wizard": true } } } }
+  ],
+  "visible_when_locked": false,
+  "description": "class_selection_screen.hills-rpg.mage_wizard.description",
+  "locked_description": "class_selection_screen.hills-rpg.mage_wizard.locked_description",
+  "upgrade_entry_group_list": [
+    { "upgrade_entry_list": [
+      { "upgrade_identifier": "hills-rpg:wizard_focus",
+        "title": "spell.hills-rpg.wizard_focus.name",
+        "component_list": [
+          { "type": "attribute_modifier", "attribute_identifier": "minecraft:generic.attack_damage",
+            "attribute_modifier_amount": 1.0, "attribute_modifier_operation": "ADD_VALUE" }
+        ] } ] }
+  ]
+}

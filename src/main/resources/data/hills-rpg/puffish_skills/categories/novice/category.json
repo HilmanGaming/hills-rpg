@@ -1,0 +1,10 @@
+{
+  "title": "Novice Skills",
+  "background": "minecraft:textures/block/stone.png",
+  "icon": {
+    "type": "item",
+    "data": {
+      "item": "minecraft:wooden_sword"
+    }
+  }
+}

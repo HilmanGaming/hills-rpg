@@ -1,0 +1,12 @@
+{
+  "class_identifier": "hills-rpg:rogue",
+  "unlock_predicate": [
+    { "condition": "minecraft:entity_properties", "entity": "this",
+      "predicate": { "type_specific": { "type": "minecraft:player",
+        "advancements": { "hills-rpg:class/rogue": true } } } }
+  ],
+  "visible_when_locked": true,
+  "description": "class_selection_screen.hills-rpg.rogue.description",
+  "locked_description": "class_selection_screen.hills-rpg.rogue.locked_description",
+  "upgrade_entry_group_list": []
+}

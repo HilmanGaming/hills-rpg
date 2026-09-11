@@ -27,6 +27,10 @@
 		"spell_power": "*",
 		"playeranimator": "*",
 		"cloth-config2": "*",
-		"trinkets": "*"
+		"trinkets": "*",
+
+		"puffish_skills": "*",
+		"rpgclassselection": "*",
+		"rpginventory": "*"
 	}
 }

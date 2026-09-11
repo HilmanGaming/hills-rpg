@@ -1,0 +1,20 @@
+{
+  "class_identifier": "hills-rpg:mage_priest",
+  "unlock_predicate": [
+    { "condition": "minecraft:entity_properties", "entity": "this",
+      "predicate": { "type_specific": { "type": "minecraft:player",
+        "advancements": { "hills-rpg:class/mage_priest": true } } } }
+  ],
+  "visible_when_locked": false,
+  "description": "class_selection_screen.hills-rpg.mage_priest.description",
+  "locked_description": "class_selection_screen.hills-rpg.mage_priest.locked_description",
+  "upgrade_entry_group_list": [
+    { "upgrade_entry_list": [
+      { "upgrade_identifier": "hills-rpg:priest_blessing",
+        "title": "spell.hills-rpg.priest_blessing.name",
+        "component_list": [
+          { "type": "attribute_modifier", "attribute_identifier": "minecraft:generic.max_health",
+            "attribute_modifier_amount": 2.0, "attribute_modifier_operation": "ADD_VALUE" }
+        ] } ] }
+  ]
+}

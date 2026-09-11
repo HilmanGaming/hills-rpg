@@ -1,9 +1,43 @@
 {
-  "item.hills-rpg.spell_book/mage": "Wizard's Grimoire",
-  "item.hills-rpg.spell_book/mage.description": "Contains the spells known to the Wizard class.",
-  "item.hills-rpg.mage_tome": "Tome of the Wizard",
-  "item.hills-rpg.mage_tome.tooltip": "Right-click to become a Wizard and receive your starting wand.",
-  "item.hills-rpg.mage_wand": "Wizard's Wand",
-  "hills-rpg.class.mage.chosen": "You have chosen the path of the Wizard!",
-  "hills-rpg.class.already_chosen": "You have already chosen a class."
+  "class_selection_screen.hills-rpg.warrior.title": "Warrior",
+  "class_selection_screen.hills-rpg.warrior.description": "A frontline melee fighter. Choose a path once you grow stronger.",
+  "class_selection_screen.hills-rpg.warrior.locked_description": "Unlock the Warrior skill in the class skill tree.",
+
+  "class_selection_screen.hills-rpg.mage.title": "Mage",
+  "class_selection_screen.hills-rpg.mage.description": "A caster who bends magic to their will.",
+  "class_selection_screen.hills-rpg.mage.locked_description": "Unlock the Mage skill in the class skill tree.",
+
+  "class_selection_screen.hills-rpg.rogue.title": "Rogue",
+  "class_selection_screen.hills-rpg.rogue.description": "A swift and cunning combatant.",
+  "class_selection_screen.hills-rpg.rogue.locked_description": "Unlock the Rogue skill in the class skill tree.",
+
+  "class_selection_screen.hills-rpg.warrior_tank.title": "Tank",
+  "class_selection_screen.hills-rpg.warrior_tank.description": "A durable frontline fighter who can withstand heavy damage.",
+  "class_selection_screen.hills-rpg.warrior_tank.locked_description": "Unlock the Tank path in the skill tree.",
+  "spell.hills-rpg.tank_taunt.name": "Taunt",
+
+  "class_selection_screen.hills-rpg.warrior_fighter.title": "Fighter",
+  "class_selection_screen.hills-rpg.warrior_fighter.description": "An aggressive melee damage dealer.",
+  "class_selection_screen.hills-rpg.warrior_fighter.locked_description": "Unlock the Fighter path in the skill tree.",
+  "spell.hills-rpg.fighter_rend.name": "Rend",
+
+  "class_selection_screen.hills-rpg.mage_priest.title": "Priest",
+  "class_selection_screen.hills-rpg.mage_priest.description": "A supportive healer and protector.",
+  "class_selection_screen.hills-rpg.mage_priest.locked_description": "Unlock the Priest path in the skill tree.",
+  "spell.hills-rpg.priest_blessing.name": "Blessing",
+
+  "class_selection_screen.hills-rpg.mage_wizard.title": "Wizard",
+  "class_selection_screen.hills-rpg.mage_wizard.description": "A master of offensive spellcasting.",
+  "class_selection_screen.hills-rpg.mage_wizard.locked_description": "Unlock the Wizard path in the skill tree.",
+  "spell.hills-rpg.wizard_focus.name": "Arcane Focus",
+
+  "class_selection_screen.hills-rpg.rogue_archer.title": "Archer",
+  "class_selection_screen.hills-rpg.rogue_archer.description": "A ranged specialist with deadly precision.",
+  "class_selection_screen.hills-rpg.rogue_archer.locked_description": "Unlock the Archer path in the skill tree.",
+  "spell.hills-rpg.archer_swiftness.name": "Swiftness",
+
+  "class_selection_screen.hills-rpg.rogue_assassin.title": "Assassin",
+  "class_selection_screen.hills-rpg.rogue_assassin.description": "A deadly striker who excels at fast, lethal attacks.",
+  "class_selection_screen.hills-rpg.rogue_assassin.locked_description": "Unlock the Assassin path in the skill tree.",
+  "spell.hills-rpg.assassin_haste.name": "Haste"
 }

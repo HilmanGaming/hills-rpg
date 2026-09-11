@@ -1,0 +1,20 @@
+{
+  "class_identifier": "hills-rpg:rogue_assassin",
+  "unlock_predicate": [
+    { "condition": "minecraft:entity_properties", "entity": "this",
+      "predicate": { "type_specific": { "type": "minecraft:player",
+        "advancements": { "hills-rpg:class/rogue_assassin": true } } } }
+  ],
+  "visible_when_locked": false,
+  "description": "class_selection_screen.hills-rpg.rogue_assassin.description",
+  "locked_description": "class_selection_screen.hills-rpg.rogue_assassin.locked_description",
+  "upgrade_entry_group_list": [
+    { "upgrade_entry_list": [
+      { "upgrade_identifier": "hills-rpg:assassin_haste",
+        "title": "spell.hills-rpg.assassin_haste.name",
+        "component_list": [
+          { "type": "attribute_modifier", "attribute_identifier": "minecraft:generic.attack_speed",
+            "attribute_modifier_amount": 0.5, "attribute_modifier_operation": "ADD_VALUE" }
+        ] } ] }
+  ]
+}
