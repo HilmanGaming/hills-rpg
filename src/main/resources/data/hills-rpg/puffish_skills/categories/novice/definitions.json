@@ -1,7 +1,7 @@
 {
-	"str": {
+	"str_1": {
 		"title": {
-			"text": "STR"
+			"text": "STR +1"
 		},
 		"frame": {
 			"type": "advancement",
@@ -10,9 +10,9 @@
 			}
 		},
 		"icon": {
-			"type": "item",
+			"type": "texture",
 			"data": {
-				"item": "minecraft:iron_sword"
+				"texture": "hills-rpg:texture/icons/str_1.png"
 			}
 		},
 		"rewards": [
@@ -24,14 +24,11 @@
 					"operation": "addition"
 				}
 			}
-		],
-		"metadata": {
-			"icon": "oy8c9uki1n5cuvw2"
-		}
+		]
 	},
-	"vit": {
+	"int_1": {
 		"title": {
-			"text": "VIT"
+			"text": "INT +1"
 		},
 		"frame": {
 			"type": "advancement",
@@ -40,39 +37,9 @@
 			}
 		},
 		"icon": {
-			"type": "item",
+			"type": "texture",
 			"data": {
-				"item": "minecraft:shield"
-			}
-		},
-		"rewards": [
-			{
-				"type": "puffish_skills:attribute",
-				"data": {
-					"attribute": "minecraft:generic.max_health",
-					"value": 1,
-					"operation": "addition"
-				}
-			}
-		],
-		"metadata": {
-			"icon": "zytwlo67c2q48p7l"
-		}
-	},
-	"int": {
-		"title": {
-			"text": "INT"
-		},
-		"frame": {
-			"type": "advancement",
-			"data": {
-				"frame": "task"
-			}
-		},
-		"icon": {
-			"type": "item",
-			"data": {
-				"item": "minecraft:enchanted_book"
+				"texture": "hills-rpg:texture/icons/int_1.png"
 			}
 		},
 		"rewards": [
@@ -84,14 +51,11 @@
 					"operation": "addition"
 				}
 			}
-		],
-		"metadata": {
-			"icon": "mqf249m34nyqrihv"
-		}
+		]
 	},
-	"dex": {
+	"dex_1": {
 		"title": {
-			"text": "DEX"
+			"text": "DEX +1"
 		},
 		"frame": {
 			"type": "advancement",
@@ -100,9 +64,9 @@
 			}
 		},
 		"icon": {
-			"type": "item",
+			"type": "texture",
 			"data": {
-				"item": "minecraft:feather"
+				"texture": "hills-rpg:texture/icons/dex_1.png"
 			}
 		},
 		"rewards": [
@@ -114,14 +78,11 @@
 					"operation": "addition"
 				}
 			}
-		],
-		"metadata": {
-			"icon": "t73xxmlun8tjt8wd"
-		}
+		]
 	},
-	"lck": {
+	"vit_1": {
 		"title": {
-			"text": "LCK"
+			"text": "VIT +1"
 		},
 		"frame": {
 			"type": "advancement",
@@ -130,9 +91,36 @@
 			}
 		},
 		"icon": {
-			"type": "item",
+			"type": "texture",
 			"data": {
-				"item": "minecraft:rabbit_foot"
+				"texture": "hills-rpg:texture/icons/vit_1.png"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.max_health",
+					"value": 1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"lck_1": {
+		"title": {
+			"text": "LCK +1"
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"icon": {
+			"type": "texture",
+			"data": {
+				"texture": "hills-rpg:texture/icons/lck_1.png"
 			}
 		},
 		"rewards": [
@@ -144,9 +132,276 @@
 					"operation": "addition"
 				}
 			}
-		],
-		"metadata": {
-			"icon": "0wy6p88nsyzyzjdy"
-		}
+		]
+	},
+	"str_2": {
+		"title": {
+			"text": "STR +2"
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"icon": {
+			"type": "texture",
+			"data": {
+				"texture": "hills-rpg:texture/icons/str_2.png"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.attack_damage",
+					"value": 1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"int_2": {
+		"title": {
+			"text": "INT +2"
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"icon": {
+			"type": "texture",
+			"data": {
+				"texture": "hills-rpg:texture/icons/int_2.png"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.armor_toughness",
+					"value": 1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"dex_2": {
+		"title": {
+			"text": "DEX +2"
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"icon": {
+			"type": "texture",
+			"data": {
+				"texture": "hills-rpg:texture/icons/dex_2.png"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.attack_speed",
+					"value": 1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"vit_2": {
+		"title": {
+			"text": "VIT +2"
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"icon": {
+			"type": "texture",
+			"data": {
+				"texture": "hills-rpg:texture/icons/vit_2.png"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.max_health",
+					"value": 1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"lck_2": {
+		"title": {
+			"text": "LCK +2"
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"icon": {
+			"type": "texture",
+			"data": {
+				"texture": "hills-rpg:texture/icons/lck_2.png"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.luck",
+					"value": 1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"str_5": {
+		"title": {
+			"text": "STR +5"
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"icon": {
+			"type": "texture",
+			"data": {
+				"texture": "hills-rpg:texture/icons/str_5.png"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.attack_damage",
+					"value": 5,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"int_5": {
+		"title": {
+			"text": "INT +5"
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"icon": {
+			"type": "texture",
+			"data": {
+				"texture": "hills-rpg:texture/icons/int_5.png"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.armor_toughness",
+					"value": 5,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"dex_5": {
+		"title": {
+			"text": "DEX +5"
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"icon": {
+			"type": "texture",
+			"data": {
+				"texture": "hills-rpg:texture/icons/dex_5.png"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.attack_speed",
+					"value": 5,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"vit_5": {
+		"title": {
+			"text": "VIT +5"
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"icon": {
+			"type": "texture",
+			"data": {
+				"texture": "hills-rpg:texture/icons/vit_5.png"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.max_health",
+					"value": 5,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"lck_5": {
+		"title": {
+			"text": "LCK +5"
+		},
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"icon": {
+			"type": "texture",
+			"data": {
+				"texture": "hills-rpg:texture/icons/lck_5.png"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.luck",
+					"value": 5,
+					"operation": "addition"
+				}
+			}
+		]
 	}
 }

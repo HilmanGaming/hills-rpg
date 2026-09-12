@@ -1,152 +1,152 @@
 {
 	"d16kdwbcj3al2l67": {
-		"definition": "vit",
+		"definition": "vit_1",
 		"x": 68,
 		"y": 0,
 		"root": true
 	},
 	"z0cue0al8ksa2yyc": {
-		"definition": "str",
+		"definition": "str_1",
 		"x": 0,
 		"y": -68,
 		"root": true
 	},
 	"qam4lokz2gsjcycn": {
-		"definition": "dex",
+		"definition": "dex_1",
 		"x": -68,
 		"y": 0,
 		"root": true
 	},
 	"ng7p3krep8r40auc": {
-		"definition": "int",
+		"definition": "int_1",
 		"x": -34,
 		"y": 68,
 		"root": true
 	},
 	"nb1hz0354i9k2odg": {
-		"definition": "lck",
+		"definition": "lck_1",
 		"x": 34,
 		"y": 68,
 		"root": true
 	},
-	"g9dv0lwjhyiul4s9": {
-		"definition": "int",
-		"x": -272,
-		"y": 306,
-		"root": false
-	},
-	"un0ib3gvar0cz40z": {
-		"definition": "int",
-		"x": -136,
-		"y": 170,
-		"root": false
-	},
 	"otkxizka4diyo8tw": {
-		"definition": "lck",
+		"definition": "lck_5",
 		"x": 272,
 		"y": 238,
 		"root": false
 	},
 	"6mf1jj1lky7x8mo7": {
-		"definition": "lck",
+		"definition": "lck_2",
 		"x": 102,
 		"y": 136,
 		"root": false
 	},
 	"2nkqaww0gfxzbuxw": {
-		"definition": "dex",
-		"x": -238,
-		"y": 68,
+		"definition": "dex_5",
+		"x": -256,
+		"y": 64,
 		"root": false
 	},
 	"ze7jcpeqg40nuesg": {
-		"definition": "dex",
-		"x": -238,
-		"y": -68,
+		"definition": "dex_5",
+		"x": -256,
+		"y": -64,
 		"root": false
 	},
 	"64ugyja3ax76jsmm": {
-		"definition": "str",
+		"definition": "str_2",
 		"x": -68,
 		"y": -170,
 		"root": false
 	},
 	"67nf47990wnm41fi": {
-		"definition": "str",
+		"definition": "str_2",
 		"x": 68,
 		"y": -170,
 		"root": false
 	},
 	"0rlgrj1ukkrimvrw": {
-		"definition": "vit",
+		"definition": "vit_2",
 		"x": 170,
 		"y": -68,
 		"root": false
 	},
 	"x7okxpe8hjcvmbmv": {
-		"definition": "vit",
+		"definition": "vit_2",
 		"x": 170,
 		"y": 68,
 		"root": false
 	},
 	"c6vpwhlkcbboanxx": {
-		"definition": "vit",
+		"definition": "vit_5",
 		"x": 306,
 		"y": -68,
 		"root": false
 	},
 	"da35byutv4a8qtu5": {
-		"definition": "str",
+		"definition": "str_5",
 		"x": 0,
-		"y": -238,
+		"y": -224,
 		"root": false
 	},
 	"ft646lqpbslntlge": {
-		"definition": "str",
+		"definition": "str_5",
 		"x": 0,
 		"y": -306,
 		"root": false
 	},
 	"2ij4q8t753h3m6o1": {
-		"definition": "int",
-		"x": -170,
-		"y": 272,
+		"definition": "int_5",
+		"x": -160,
+		"y": 256,
 		"root": false
 	},
 	"psjej0zyc0xq5bj8": {
-		"definition": "int",
-		"x": -238,
-		"y": 204,
+		"definition": "int_5",
+		"x": -224,
+		"y": 192,
 		"root": false
 	},
 	"55i1d5i4vm1kxj2d": {
-		"definition": "lck",
+		"definition": "lck_5",
 		"x": 204,
 		"y": 306,
 		"root": false
 	},
 	"jt3mx6949p3xrd4z": {
-		"definition": "lck",
+		"definition": "lck_2",
 		"x": 170,
 		"y": 204,
 		"root": false
 	},
 	"e72zbl96gv88h60d": {
-		"definition": "vit",
+		"definition": "vit_5",
 		"x": 306,
 		"y": 68,
 		"root": false
 	},
 	"eelkmdy915qq2npk": {
-		"definition": "dex",
+		"definition": "dex_2",
 		"x": -204,
 		"y": 0,
 		"root": false
 	},
 	"v5c2y8vp9i9h4mj0": {
-		"definition": "dex",
-		"x": -306,
+		"definition": "dex_2",
+		"x": -320,
 		"y": 0,
+		"root": false
+	},
+	"9lkqa8ike3k8v40f": {
+		"definition": "int_2",
+		"x": -128,
+		"y": 160,
+		"root": false
+	},
+	"4wkg7w09zgy6my55": {
+		"definition": "int_2",
+		"x": -256,
+		"y": 288,
 		"root": false
 	}
 }
