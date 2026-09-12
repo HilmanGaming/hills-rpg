@@ -3,7 +3,8 @@
 	"package": "net.hilman.hilmanrpg.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"PlayerAttributesMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

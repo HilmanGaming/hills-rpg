@@ -39,5 +39,11 @@
   "class_selection_screen.hills-rpg.rogue_assassin.title": "Assassin",
   "class_selection_screen.hills-rpg.rogue_assassin.description": "A deadly striker who excels at fast, lethal attacks.",
   "class_selection_screen.hills-rpg.rogue_assassin.locked_description": "Unlock the Assassin path in the skill tree.",
-  "spell.hills-rpg.assassin_haste.name": "Haste"
+  "spell.hills-rpg.assassin_haste.name": "Haste",
+
+  "attribute.name.hills-rpg.strength": "Strength",
+  "attribute.name.hills-rpg.intelligence": "Intelligence",
+  "attribute.name.hills-rpg.vitality": "Vitality",
+  "attribute.name.hills-rpg.dexterity": "Dexterity",
+  "attribute.name.hills-rpg.luck": "Luck"
 }
