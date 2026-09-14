@@ -19,7 +19,7 @@
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "minecraft:generic.attack_damage",
+					"attribute": "hills-rpg:strength",
 					"value": 1,
 					"operation": "addition"
 				}
@@ -46,7 +46,7 @@
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "minecraft:generic.armor_toughness",
+					"attribute": "hills-rpg:intelligence",
 					"value": 1,
 					"operation": "addition"
 				}
@@ -73,7 +73,7 @@
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "minecraft:generic.attack_speed",
+					"attribute": "hills-rpg:dexterity",
 					"value": 1,
 					"operation": "addition"
 				}
@@ -100,7 +100,7 @@
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "minecraft:generic.max_health",
+					"attribute": "hills-rpg:vitality",
 					"value": 1,
 					"operation": "addition"
 				}
@@ -127,7 +127,7 @@
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "minecraft:generic.luck",
+					"attribute": "hills-rpg:luck",
 					"value": 1,
 					"operation": "addition"
 				}
@@ -154,8 +154,8 @@
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "minecraft:generic.attack_damage",
-					"value": 1,
+					"attribute": "hills-rpg:strength",
+					"value": 2,
 					"operation": "addition"
 				}
 			}
@@ -181,8 +181,8 @@
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "minecraft:generic.armor_toughness",
-					"value": 1,
+					"attribute": "hills-rpg:intelligence",
+					"value": 2,
 					"operation": "addition"
 				}
 			}
@@ -208,8 +208,8 @@
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "minecraft:generic.attack_speed",
-					"value": 1,
+					"attribute": "hills-rpg:dexterity",
+					"value": 2,
 					"operation": "addition"
 				}
 			}
@@ -235,8 +235,8 @@
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "minecraft:generic.max_health",
-					"value": 1,
+					"attribute": "hills-rpg:vitality",
+					"value": 2,
 					"operation": "addition"
 				}
 			}
@@ -262,8 +262,8 @@
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "minecraft:generic.luck",
-					"value": 1,
+					"attribute": "hills-rpg:luck",
+					"value": 2,
 					"operation": "addition"
 				}
 			}
@@ -289,7 +289,7 @@
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "minecraft:generic.attack_damage",
+					"attribute": "hills-rpg:strength",
 					"value": 5,
 					"operation": "addition"
 				}
@@ -316,7 +316,7 @@
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "minecraft:generic.armor_toughness",
+					"attribute": "hills-rpg:intelligence",
 					"value": 5,
 					"operation": "addition"
 				}
@@ -343,7 +343,7 @@
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "minecraft:generic.attack_speed",
+					"attribute": "hills-rpg:dexterity",
 					"value": 5,
 					"operation": "addition"
 				}
@@ -370,7 +370,7 @@
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "minecraft:generic.max_health",
+					"attribute": "hills-rpg:vitality",
 					"value": 5,
 					"operation": "addition"
 				}
@@ -397,7 +397,7 @@
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "minecraft:generic.luck",
+					"attribute": "hills-rpg:luck",
 					"value": 5,
 					"operation": "addition"
 				}

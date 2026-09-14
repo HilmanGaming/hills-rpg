@@ -11,56 +11,41 @@ import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
 
 /**
- * Atribut custom untuk sistem stat Hill's RPG: STR / INT / VIT / DEX / LCK.
- *
- * Nilai atribut ini sendiri TIDAK melakukan apa-apa terhadap gameplay.
- * Ini cuma "wadah angka" yang bisa dibaca/diubah oleh:
- *  - Pufferfish's Skills (node skill tree ngasih modifier ke atribut ini)
- *  - RPG Class Selection (item upgrade dari pilihan class bisa juga nge-modify ini)
- *  - Logic custom kita sendiri (mis. mapping STR -> Melee Damage dari Puffish Attributes,
- *    lihat Daftar_Atribut_Mod_Update.md untuk pemetaan lengkapnya)
- *
- * Base value (fallback) sengaja 0.0 karena ini murni stat tambahan di luar stat vanilla,
- * bukan pengganti Max Health / Attack Damage dsb.
+ * 5 stat inti custom mod ini: STR, VIT, DEX, INT, LCK.
+ * Nilai mentahnya sengaja tidak dibatasi (lihat Prinsip 1.4 di dokumen desain) -
+ * yang dibatasi adalah attribute TUJUAN, bukan stat ini.
  */
-public class ModAttributes {
+public final class ModAttributes {
+	private ModAttributes() {}
 
-	// Batas atas 1000 itu perkiraan aman untuk sekarang (mob late-game / 12 Advanced Class).
-	// Gampang dinaikkan belakangan kalau progression system-nya ternyata butuh lebih tinggi.
-	private static final double MIN = 0.0;
-	private static final double MAX = 1000.0;
+	public static final RegistryEntry<EntityAttribute> STRENGTH = register("strength");
+	public static final RegistryEntry<EntityAttribute> VITALITY = register("vitality");
+	public static final RegistryEntry<EntityAttribute> DEXTERITY = register("dexterity");
+	public static final RegistryEntry<EntityAttribute> INTELLIGENCE = register("intelligence");
+	public static final RegistryEntry<EntityAttribute> LUCK = register("luck");
 
-	public static final RegistryEntry<EntityAttribute> STRENGTH =
-			register("strength");
-
-	public static final RegistryEntry<EntityAttribute> INTELLIGENCE =
-			register("intelligence");
-
-	public static final RegistryEntry<EntityAttribute> VITALITY =
-			register("vitality");
-
-	public static final RegistryEntry<EntityAttribute> DEXTERITY =
-			register("dexterity");
-
-	public static final RegistryEntry<EntityAttribute> LUCK =
-			register("luck");
+	/**
+	 * Panggil sekali di HillSRPG#onInitialize supaya class ini (dan static field di atas)
+	 * dipaksa ke-load sejak awal, sebelum vanilla membekukan default attribute container.
+	 */
+	public static void bootstrap() {
+		HillSRPG.LOGGER.info("Hill's RPG: stat inti STR/VIT/DEX/INT/LCK terdaftar.");
+	}
 
 	private static RegistryEntry<EntityAttribute> register(String path) {
 		Identifier id = HillSRPG.id(path);
-		RegistryKey<EntityAttribute> key = RegistryKey.of(RegistryKeys.ATTRIBUTE, id);
 
-		String translationKey = "attribute.name." + id.getNamespace() + "." + id.getPath();
-		EntityAttribute attribute = new ClampedEntityAttribute(translationKey, 0.0, MIN, MAX)
-				.setTracked(true); // disync ke client, supaya bisa ditampilkan di UI/HUD nanti
+		EntityAttribute attribute = new ClampedEntityAttribute(
+				"attribute.name." + HillSRPG.MOD_ID + "." + path,
+				0.0D,
+				0.0D,
+				100000.0D
+		).setTracked(true);
 
-		return Registry.registerReference(Registries.ATTRIBUTE, key, attribute);
-	}
+		Registry.register(Registries.ATTRIBUTE, id, attribute);
 
-	/**
-	 * Panggil sekali dari ModInitializer supaya class ini (dan semua static field-nya)
-	 * ke-load, sehingga registrasi di atas benar-benar jalan.
-	 */
-	public static void initialize() {
-		HillSRPG.LOGGER.info("Registered {} custom RPG attributes", 5);
+		return Registries.ATTRIBUTE
+				.getEntry(RegistryKey.of(RegistryKeys.ATTRIBUTE, id))
+				.orElseThrow(() -> new IllegalStateException("Gagal registrasi attribute: " + id));
 	}
 }
